@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity implements JsonTask.JsonTask
         recyclerviewadapter adapter = new recyclerviewadapter (this, listOfMountains);
         view.setAdapter(adapter);
         view.setLayoutManager(new LinearLayoutManager(this));
+        adapter.notifyDataSetChanged();
 
     }
 }
